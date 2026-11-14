@@ -1,0 +1,33 @@
+.fxc-badge {
+  display: inline-block !important;
+  margin: 0 0 0 5px !important;
+  padding: 0 7px !important;
+  border-radius: 999px !important;
+  background: #e3f5ee !important;
+  color: #0a6a50 !important;
+  border: 1px solid #b7e3d2 !important;
+  font: 600 0.78em/1.5 system-ui, -apple-system, "Segoe UI", sans-serif !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  cursor: help;
+}
+.fxc-tip {
+  position: absolute;
+  z-index: 2147483647;
+  min-width: 170px;
+  max-width: 320px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #0f1f1a;
+  color: #f2fbf7;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  pointer-events: auto;
+}
+.fxc-tip .fxc-from { color: #9bb8ad; font-size: 12px; }
+.fxc-tip .fxc-to { font-size: 18px; font-weight: 700; margin-top: 2px; color: #5ff0bd; }
+.fxc-tip .fxc-rate { color: #7e9a8f; font-size: 11px; margin-top: 4px; }

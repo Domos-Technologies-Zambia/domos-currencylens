@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Domos CurrencyLens</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="logo">⇄</div>
+    <div>
+      <h1>Domos CurrencyLens</h1>
+      <p id="status">Loading rates…</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>Quick convert</h2>
+    <div class="row">
+      <input id="qAmount" type="number" min="0" step="any" value="100">
+      <select id="qFrom"></select>
+    </div>
+    <div id="qResult" class="result">—</div>
+  </section>
+
+  <section class="card">
+    <h2>Settings</h2>
+    <label class="field">My currency
+      <select id="target"></select>
+    </label>
+    <label class="field">Assume this for “$” and bare numbers
+      <select id="dollarMeans"></select>
+    </label>
+    <label class="toggle"><input id="auto" type="checkbox"> Auto-show conversions next to prices</label>
+    <label class="toggle"><input id="selection" type="checkbox"> Convert when I select an amount</label>
+    <label class="toggle"><input id="siteOff" type="checkbox"> <span id="siteLabel">Disable on this site</span></label>
+  </section>
+
+  <footer>
+    <a class="credit" href="https://www.exchangerate-api.com" target="_blank" rel="noopener">Rates by Exchange Rate API</a>
+    <button id="refresh">Refresh rates</button>
+  </footer>
+
+  <script src="currencies.js"></script>
+  <script src="fx-core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
